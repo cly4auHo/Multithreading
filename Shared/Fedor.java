@@ -1,13 +1,13 @@
 package RunVasya;
 
 public class Fedor implements Runnable {
-
+    
+    Shared shared;
+    
     public Fedor(Shared shared) {
         this.shared = shared;
         new Thread(this).start();
     }
-
-    Shared shared;
 
     @Override
     public void run() {
