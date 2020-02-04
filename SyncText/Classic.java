@@ -2,10 +2,8 @@ package RunVasya;
 
 public class Classic {
 
-    private Object a = new Object();
-
-    void  printText(String text) {
-        synchronized (a) {
+   synchronized void printText(String text) {
+        
             System.out.print("[");
 
             try {
@@ -18,4 +16,4 @@ public class Classic {
             System.out.print("]");
         }
     }
-}
+
